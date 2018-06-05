@@ -1,3 +1,6 @@
+require 'pry'
+
+
 class Show < ActiveRecord::Base
 
   def self.highest_rating
@@ -5,6 +8,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
+    binding.pry
     Show.highest_rating
   end
 end
