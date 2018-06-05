@@ -12,7 +12,6 @@ class Show < ActiveRecord::Base
   end
 
   def lowest_rating
-    def self.highest_rating
       Show.minimum(:rating)
     end
 
